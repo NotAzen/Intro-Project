@@ -18,7 +18,7 @@ public class CameraFollow : MonoBehaviour
         // vector from camera to player (?)
         transformNeeded.x = cameraPos.x - player.transform.position.x;
         transformNeeded.y = cameraPos.y - player.transform.position.y;
-        cameraPos = cameraPos - transformNeeded / 200;
+        cameraPos = cameraPos - transformNeeded / 20;
 
         // actually assign camera position the cameraPos variable
         transform.position = cameraPos;
